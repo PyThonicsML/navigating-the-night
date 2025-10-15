@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigating the Night - Tena Brand Analysis</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .header {
+            text-align: center;
+            color: white;
+            margin-bottom: 3rem;
+        }
+        
+        .header h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .video-container {
+            background: white;
+            border-radius: 20px;
+            padding: 2rem;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+        }
+        
+        .video-wrapper {
+            position: relative;
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        
+        video {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        .video-placeholder {
+            background: #f8f9fa;
+            border: 2px dashed #dee2e6;
+            border-radius: 12px;
+            padding: 4rem 2rem;
+            text-align: center;
+            color: #6c757d;
+        }
+        
+        .video-placeholder h3 {
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+        
+        .controls {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            background: #667eea;
+            color: white;
+            padding: 0.8rem 2rem;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.3s ease;
+        }
+        
+        .btn:hover {
+            background: #5a67d8;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+        
+        .btn-secondary {
+            background: #6c757d;
+        }
+        
+        .btn-secondary:hover {
+            background: #5a6268;
+        }
+        
+        .info-section {
+            background: white;
+            border-radius: 20px;
+            padding: 2rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+        }
+        
+        .info-section h2 {
+            color: #2d3748;
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+        }
+        
+        .info-section p {
+            color: #4a5568;
+            margin-bottom: 1rem;
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        
+        .feature {
+            background: #f7fafc;
+            padding: 1.5rem;
+            border-radius: 12px;
+            border-left: 4px solid #667eea;
+        }
+        
+        .feature h3 {
+            color: #2d3748;
+            margin-bottom: 0.5rem;
+        }
+        
+        .footer {
+            text-align: center;
+            color: white;
+            margin-top: 3rem;
+            opacity: 0.8;
+        }
+        
+        .powered-by {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+            
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .video-container, .info-section {
+                padding: 1.5rem;
+            }
+            
+            .controls {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Navigating the Night</h1>
+            <p>AI-Powered Brand Analysis for Tena: Insights from NotebookLM</p>
+        </header>
+        
+        <div class="video-container">
+            <div class="video-wrapper">
+                <!-- Video will be added here once uploaded -->
+                <div class="video-placeholder">
+                    <h3>📹 Video Ready to Upload</h3>
+                    <p>Upload your "Navigating_the_Night.mp4" file to this repository to display it here.</p>
+                    <p><strong>File Size:</strong> 40MB | <strong>Format:</strong> MP4</p>
+                </div>
+                <!-- Uncomment this line after uploading the video file -->
+                <!-- <video controls poster="thumbnail.jpg">
+                    <source src="Navigating_the_Night.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video> -->
+            </div>
+            
+            <div class="controls">
+                <a href="#" class="btn" id="downloadBtn" style="display: none;">
+                    📥 Download Video
+                </a>
+                <a href="https://github.com/PyThonicsML/navigating-the-night" class="btn btn-secondary" target="_blank">
+                    📁 View Repository
+                </a>
+            </div>
+        </div>
+        
+        <div class="info-section">
+            <h2>About This Analysis</h2>
+            <p>This presentation contains AI-generated insights about the Tena brand, created using Google's NotebookLM technology. The analysis provides deep market intelligence and strategic recommendations.</p>
+            
+            <div class="features">
+                <div class="feature">
+                    <h3>🎙️ AI Commentary</h3>
+                    <p>Natural conversation format with professional narration</p>
+                </div>
+                <div class="feature">
+                    <h3>📊 Data-Driven</h3>
+                    <p>Based on comprehensive market research and brand analysis</p>
+                </div>
+                <div class="feature">
+                    <h3>🎯 Strategic Focus</h3>
+                    <p>Actionable insights for brand positioning and market strategy</p>
+                </div>
+                <div class="feature">
+                    <h3>🔒 Secure Access</h3>
+                    <p>Professional hosting with reliable corporate network access</p>
+                </div>
+            </div>
+        </div>
+        
+        <footer class="footer">
+            <p>&copy; 2025 Brand Analysis Presentation</p>
+            <div class="powered-by">
+                <span>Powered by</span>
+                <strong>NotebookLM</strong>
+                <span>•</span>
+                <strong>GitHub Pages</strong>
+            </div>
+        </footer>
+    </div>
+    
+    <script>
+        // Enable download button once video is uploaded
+        document.addEventListener('DOMContentLoaded', function() {
+            const video = document.querySelector('video');
+            const downloadBtn = document.getElementById('downloadBtn');
+            
+            if (video && video.src) {
+                downloadBtn.href = video.src;
+                downloadBtn.style.display = 'inline-flex';
+            }
+        });
+    </script>
+</body>
+</html>
